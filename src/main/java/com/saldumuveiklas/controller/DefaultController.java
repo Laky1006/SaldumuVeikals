@@ -8,9 +8,19 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class DefaultController {
+    Student student = new Student();
+
+    // @GetMapping(value = "index.html")
+    // ModelAndView index(@RequestParam(name="name", required=false, defaultValue="null") String name, Model model) {
+    //     ModelAndView modelAndView = new ModelAndView("templates/index.html");
+    //     modelAndView.addObject("huina", "AAAAAAAA");
+    //     return modelAndView;
+    // }
+    
     @GetMapping(value = "index.html")
-    ModelAndView index(@RequestParam(name="name", required=false, defaultValue="null") String name, Model model) {
-        ModelAndView modelAndView = new ModelAndView("index");
-        return modelAndView;
-    }
+        public ModelAndView passParametersWithModelAndView() {
+    ModelAndView modelAndView = new ModelAndView("view/viewPage");
+    modelAndView.addObject("huina", "Baeldung");
+    return modelAndView;
+}
 }

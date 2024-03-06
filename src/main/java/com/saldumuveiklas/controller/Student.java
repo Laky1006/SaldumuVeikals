@@ -10,19 +10,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
-@Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
+
 public class Student {
+    public String name = "ASS";
+
+    // private long id;
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    public String name;
-    public String surname;
-    public String email;
-    public String studentGroup;
+    // public String surname;
+    // public String email;
+    // public String studentGroup;
 
 }

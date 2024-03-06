@@ -12,20 +12,7 @@
     <h1>Welcome to our Sweets Shop!!!</h1>
    
     <h3 th:text="'Today is: ' + ${date}"></h3>
-    
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-            <th>Group</th>
-        </tr>
-        <tr th:each="student : ${students}">
-            <td th:text="${student.name}"></td>
-            <td th:text="${student.surname}"></td>
-            <td th:text="${student.email}"></td>
-            <td th:text="${student.group}"></td>
-        </tr>
-    </table>
+    <div>Test Value: <div th:text="${huina}"></div></div>
+
 </body>
 </html>
