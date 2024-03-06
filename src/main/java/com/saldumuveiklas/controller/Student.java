@@ -1,4 +1,4 @@
-package lv.rvt.entity;
+package com.saldumuveiklas.controller;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
